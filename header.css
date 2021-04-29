@@ -1,0 +1,77 @@
+
+header{
+    padding: 4px 16px;
+    width: 98vw;
+    height: 65px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    user-select: none
+}
+.logo{
+    padding: 8px;
+    border-radius: 100%;
+}
+.logo:hover{
+    background-color: #EFEFEF;
+}
+.nav_list ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.nav_list a{
+    padding: 13px 15px;
+    border-radius: 24px;
+    color: rgb(51 51 51);
+}
+.active{
+    color: white !important;
+    background-color: #111111;
+}
+.in_active{
+    background-color: white  ;
+}
+.in_active:hover{
+    background-color: #eeee;
+}
+.search_i{
+    position: absolute;
+    left: 308px;
+}
+.search{
+    text-indent: 20px;
+    width: 100%;
+    height: 40%;
+    outline: none;
+    background-color: #eee;
+    border: 0px;
+    padding: 8px 0px 8px 16px;
+    border-radius: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.search_bar{
+    width: 100%;
+    height: 100%;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tool_bar{
+    display: flex;
+}
+.tool_bar a{
+    padding: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+.tool_bar a:hover{
+    background-color: #eeee;
+}

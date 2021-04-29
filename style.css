@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --card_width: 246px;
+    --row_increment: 10px;
+    --card_border_radius: 16px;
+    --card_small: 21;
+    --card_medium: 42;
+    --card_large: 48;
+}
+/* body stylink */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    font-size: 14px;
+}
+/* main container */
+.pin_container {
+    margin: 0;
+    padding-top: 80px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+
+}
+/* outer most card */
+.card {
+    padding: 0;
+    margin: 10px 5px;
+    border-radius: var(--card_border_radius);
+    background-color: rgba(230, 70, 70, 0);
+}
+/* 3 sizes of cards */
+.card_small {
+    grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+    grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+    grid-row-end: span var(--card_large);
+}
+/* 3 sizes of inner cards  */
+.inner_card_b{
+    height: 419px;
+    width: 100%;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inner_card_m{
+    height: 353px;
+    width: 100%;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inner_card_s{
+    height: 140px;
+    width: 100%;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caption{
+    padding: 9px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.pin_save{
+    padding: 12px;
+    opacity: 0;
+    transition: .2s ease;
+}
+.pin_save input{
+    width: 70%;
+    height: 44px;
+    border: none;
+    border-radius: 12px 0px 0px 12px;
+    text-indent: 20px;
+    outline: none;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.pin_save button{
+    background-color: rgba(230, 0, 35, 0.9);
+    color: #eee;
+    height: 44px;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    position: absolute;
+    width: 3.5rem;
+    outline: none;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.dot{
+    background-color: #eee;
+    padding: 5px 10px;
+    padding-bottom: 12px;
+    outline: none; border: none;
+    border-radius: 500px;
+    font-weight: 900; 
+    opacity: 0;
+    margin: 15px;
+    width: 35px;
+    margin-left: 185px;
+}

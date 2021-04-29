@@ -1,0 +1,31 @@
+
+.inner_card_b:hover{
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.119);
+}
+.inner_card_m:hover{
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.119);
+}
+.inner_card_s:hover{
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.119);
+}
+.inner_card_b:hover .pin_save{
+    opacity: 1;
+}
+.inner_card_m:hover .pin_save{
+    opacity: 1;
+}
+.inner_card_s:hover .pin_save{
+    opacity: 1;
+}
+.inner_card_m:hover .dot{
+    opacity: 1;
+}
+.inner_card_s:hover .dot{
+    opacity: 1;
+}
+.inner_card_b:hover .dot{
+    opacity: 1;
+}
